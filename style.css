@@ -1,3 +1,7 @@
+@font-face {
+    font-family: kajiro;
+    src: url(Kajiro.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +14,39 @@ html,body{
 }
 
 body{
-    font-family: gilroy;
+    font-family: kajiro;
     text-align: center;
 }
 
+#main{
+    display: none;
+}
+
+h1{
+    font-size: 5vw;
+}
+
+@media (max-width: 500px){
+    body{
+        background: black;
+    }
+
+    #main{
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        /* background: red; */
+        display: flex;
+    }
+
+    #main>h2{
+        font-family: kajiro;
+        font-size: 13vw;
+        color: white;
+    }
+
+    #game{
+        display: none;
+    }
+}
